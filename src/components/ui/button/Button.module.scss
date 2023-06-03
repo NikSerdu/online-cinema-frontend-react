@@ -1,0 +1,32 @@
+.gr {
+	background: linear-gradient(#0e1327, #0e1327) padding-box,
+		linear-gradient(to right, #7fb6f6, #124f99) border-box;
+	border: 2px solid transparent;
+	position: relative;
+}
+
+.gr::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #7fb6f6, #124f99);
+	opacity: 0;
+	transition: opacity 0.25s ease-in-out;
+	border-radius: 24px;
+	mix-blend-mode: screen;
+}
+
+.gr:hover:not([disabled])::before {
+	opacity: 1;
+}
+
+.active.gr::before {
+	@apply opacity-100;
+}
+
+.gr::before.active {
+	opacity: 1;
+}

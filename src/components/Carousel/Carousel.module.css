@@ -1,0 +1,13 @@
+.slider {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.active {
+	background: #fff;
+}
+
+.btn {
+	width: 20vw;
+	height: 95vh;
+}

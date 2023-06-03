@@ -1,0 +1,12 @@
+.active {
+	@apply fixed bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-bg-color bg-opacity-70;
+	transition: 0.25s;
+	opacity: 1;
+}
+
+.hidden {
+	@apply fixed bottom-0 left-0 right-0 top-0 z-10 flex items-center justify-center bg-bg-color bg-opacity-70;
+	transition: 0.25s;
+	opacity: 0;
+	pointer-events: none;
+}
