@@ -17,6 +17,11 @@ export const menu = [
 		id: 3,
 		name: 'Сериалы',
 		href: '/serials'
+	},
+	{
+		id: 4,
+		name: 'Актёры',
+		href: '/actors'
 	}
 ]
 
